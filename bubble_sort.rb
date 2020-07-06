@@ -13,6 +13,6 @@ def bubble_sort(array)
   print array
 end
 
-bubble_sort(%w([hey][hi][Ruby][hello][Marcos])) do |l, r|
+bubble_sort(%w[hey hi Ruby hello Marcos]) do |l, r|
   (l.length - r.length).positive?
 end
