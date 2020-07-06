@@ -1,18 +1,18 @@
-def bubble_sort_by(a)
+def bubble_sort_by(array)
   swap = true
   while swap == true
     swap = false
-    (a.size - 1).times do |i|
-      comparator = yield a[i] , a[i+1]
+    (array.size - 1).times do |i|
+      comparator = yield array[i], array[i + 1]
       if comparator
-        a[i] , a[i+1] = a[i+1], a[i]
+        array[i], array[i + 1] = array[i+1], array[i]
         swap = true
       end
     end
   end
-  print a
+  print array
 end
 
-bubble_sort_by(['Samuel','hi','Marcos', 'Ruby']) do |l,r|
+bubble_sort_by(['Samuel','hi', 'Marcos', 'Ruby']) do |l, r|
   (l.length - r.length).positive?
 end
