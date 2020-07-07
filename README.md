@@ -11,7 +11,7 @@ bubble_sort methods is created to sort an array containing strings based on the 
 
 ## Live version 
 
-[Run on Repl.it](https://repl.it/join/nobpzbtz-marcoshdezcam)
+[![Run on Repl.it](https://repl.it/badge/github/SigmaSam/Bubble-Sort-By)](https://repl.it/github/SigmaSam/Bubble-Sort-By)
 
 ## Getting Started
 
