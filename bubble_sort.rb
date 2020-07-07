@@ -3,7 +3,9 @@ def bubble_sort_by(array)
   while swap == true
     swap = false
     (array.size - 1).times do |i|
-      comparator = yield array[i], array[i + 1]
+      comparator = yield array[i] , array[i + 1]
+      if comparator == (True || False) || Nil 
+        puts "No block given."
       if comparator
         array[i], array[i + 1] = array[i + 1], array[i]
         swap = true
