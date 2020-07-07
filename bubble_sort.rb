@@ -1,4 +1,4 @@
-def bubble_sort_by(array)
+def bubble_sort(array)
   swap = true
   while swap == true
     swap = false
@@ -15,6 +15,6 @@ def bubble_sort_by(array)
   print array
 end
 
-bubble_sort_by(%w([hey][hi][Ruby][hello][Marcos])) do |l, r|
+bubble_sort(%w[hey hi Ruby hello Marcos]) do |l, r|
   (l.length - r.length).positive?
 end
