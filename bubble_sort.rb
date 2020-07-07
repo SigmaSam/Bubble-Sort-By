@@ -10,7 +10,7 @@ def bubble_sort(numbers)
         end
       end
     end
-    print numbers
+    numbers
   else
     puts 'No numbers given.'
   end
@@ -23,7 +23,7 @@ def bubble_sort_by(array)
       swap = false
       (array.size - 1).times do |i|
         comparator = yield array[i], array[i + 1]
-        if comparator
+        if comparator && comparator != 0
           array[i], array[i + 1] = array[i + 1], array[i]
           swap = true
         end
